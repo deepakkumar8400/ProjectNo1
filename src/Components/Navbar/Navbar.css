@@ -1,0 +1,108 @@
+/* Navbar Styling */
+nav.navbar {
+  width: 100%;
+  padding: 10px 20px; /* Added padding for spacing */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background: none; /* No initial background */
+  transition: background-color 0.3s ease;
+}
+
+nav.sticky {
+  background-color: rgba(21, 0, 255, 0.9); /* Blue tint on scroll */
+}
+
+nav img.logo {
+  width: 180px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.nav-list li {
+  margin: 0 20px; /* Spacing between items */
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-list li:hover {
+  color: #f1c40f; /* Hover color */
+}
+
+.btn {
+  background-color: rgb(47, 193, 27);
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Full-screen hero section */
+.header {
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background-image: url('../../assets/hero.png'); /* Fullscreen background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+/* New button styles */
+.cta-button {
+  background-color: rgb(47, 193, 27); /* Button color */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 20px; /* Spacing above the button */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #25d637; /* Hover color */
+}
+
+/* Optional overlay effect */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 0;
+}

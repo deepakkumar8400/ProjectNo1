@@ -1,0 +1,62 @@
+.about {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+  }
+  
+  .about-left {
+    flex: 1;
+  }
+  
+  .about-right {
+    flex: 1;
+  }
+  
+  .image-container {
+    position: relative; /* Needed for positioning the play icon over the main image */
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the play icon */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .learn-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #0056b3;
+  }
+  
